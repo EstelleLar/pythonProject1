@@ -14,7 +14,7 @@ def initialise_tableau2d(size_x, size_y, tableau):
 def affiche_tableau2d(size_x, size_y, tableau):
     for x in range (size_x):
         for y in range(size_y):
-            print(tableau[x][y], end ='') #end ='' pour éviter les retour à la ligne après chaque print
+            print(tableau[x][y], end =' ') #end ='' pour éviter les retour à la ligne après chaque print
         print ("\r") #je fais un retour chariot à chaque fin de boucle for
 
 
@@ -24,13 +24,13 @@ nb_colonnes = 5
 nb_lignes = 5
 
 tableau = creer_tableau2d(nb_lignes, nb_colonnes)
-print(tableau)
+#print(tableau)
 
 initialise_tableau2d(nb_lignes, nb_colonnes, tableau)
-print(tableau)
+#print(tableau)
 
 affiche_tableau2d(nb_lignes, nb_colonnes, tableau)
-print(tableau)
+print(affiche_tableau2d)
 
 
 
